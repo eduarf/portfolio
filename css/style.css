@@ -14,6 +14,30 @@ body {
   line-height: 1.8;
   display: flex; }
 
+.header {
+  background-color: #90b4ce;
+  height: 7rem;
+  z-index: 2;
+  background-color: #90b4ce; }
+  .header__main-nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  .header__list {
+    display: flex; }
+  .header__item {
+    list-style-type: none;
+    padding-right: 3rem; }
+  .header__link:link, .header__link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fffffe;
+    font-weight: 700; }
+  .header__link {
+    position: relative; }
+
 .side-nav {
   position: sticky;
   top: 0;
@@ -45,3 +69,6 @@ body {
     transition: all .3s; }
     .side-nav__icon:hover {
       fill: #3da9fc; }
+
+.main {
+  flex: 1; }

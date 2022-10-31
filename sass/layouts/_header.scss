@@ -1,0 +1,33 @@
+.header{
+    background-color: $secondary;
+    height: 7rem;
+    z-index: 2;
+    background-color: $secondary;
+    &__main-nav{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    &__hamburger-menu{}
+    &__list{
+        display: flex;
+    }
+    &__item{
+        list-style-type: none;
+        padding-right: 3rem;
+        
+    }
+    &__link:link,
+    &__link:visited{
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: $main;
+        font-weight: 700;
+    }
+    &__link {
+        position: relative;
+    }
+}
