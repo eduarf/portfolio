@@ -1,56 +1,115 @@
-.header{
-    background-color: $tertiary;
-    height: 7rem;
-    z-index: 2;
-    &__main-nav{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+.header {
+  background-color: $tertiary;
+  height: 7rem;
+  z-index: 2;
+  &__main-nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    @media only screen and(max-width: $medium-small) {
+      width: 25rem;
+      height: 100%;
+      position: fixed;
+      top: -100rem;
+      right: 0rem;
+      background-color: $tertiary;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__list {
+    display: flex;
+    @media only screen and(max-width: $medium-small) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    list-style-type: none;
+    padding-right: 3rem;
+    @media only screen and(max-width: $medium-small) {
+      padding-bottom: 3rem;
+    }
+  }
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $main;
+    font-weight: 700;
 
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $main;
+      position: absolute;
+      transform: scaleX(0);
+      transition: all 0.2s;
     }
-    &__hamburger-menu{}
-    &__list{
-        display: flex;
+    &::before {
+      transform-origin: left;
+      top: -0.5rem;
     }
-    &__item{
-        list-style-type: none;
-        padding-right: 3rem;
-        
+    &::after {
+      transform-origin: right;
+      bottom: -0.6rem;
+      left: 0;
     }
-    &__link:link,
-    &__link:visited{
-        text-decoration: none;
-        font-size: 1.6rem;
-        color: $main;
-        font-weight: 700;
+    &:hover::before,
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+  &__link {
+    position: relative;
+  }
+}
+.hamburger-menu {
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  top: 1rem;
+  right: 3rem;
+  display: block;
+  background-color: $stroke;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  &__span-1,
+  &__span-2,
+  &__span-3 {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    transition: all .3s ease-in-out;
+  }
+  @media only screen and(max-width: $medium-small) {
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
+  }
+}
 
-        &::before,
-        &::after{
-            content: '';
-            width: 100%;
-            height: 2px;
-            background-color: $main;
-            position: absolute;
-            transform: scaleX(0);
-            transition: all .2s;
-        }
-        &::before{
-            transform-origin: left;
-            top: -.5rem;
-        }
-        &::after{
-            transform-origin: right;
-            bottom: -.6rem;
-            left: 0;
-        }
-        &:hover::before,
-        &:hover::after{
-            transform: scaleX(1);
-        }
-    }
-    &__link {
-        position: relative;
-    }
+.clicked {
+  top: 0;
+  transition: all 0.4s ease-in-out;
+}
+.span-2-clicked{
+    opacity: 0;
+}
+.span-1-clicked{
+    transform: translateY(1rem) rotateZ(-45deg);
+}
+.span-3-clicked{
+    transform: translateY(-1rem) rotateZ(45deg);
 }

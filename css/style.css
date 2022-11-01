@@ -23,36 +23,94 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center; }
+    align-items: center;
+    transition: all 0.4s ease-in-out; }
+    @media only screen and (max-width: 37.5em) {
+      .header__main-nav {
+        width: 25rem;
+        height: 100%;
+        position: fixed;
+        top: -100rem;
+        right: 0rem;
+        background-color: #ef4565;
+        flex-direction: column;
+        justify-content: center; } }
   .header__list {
     display: flex; }
+    @media only screen and (max-width: 37.5em) {
+      .header__list {
+        flex-direction: column; } }
   .header__item {
     list-style-type: none;
     padding-right: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__item {
+        padding-bottom: 3rem; } }
   .header__link:link, .header__link:visited {
     text-decoration: none;
     font-size: 1.6rem;
     color: #fffffe;
     font-weight: 700; }
     .header__link:link::before, .header__link:link::after, .header__link:visited::before, .header__link:visited::after {
-      content: '';
+      content: "";
       width: 100%;
       height: 2px;
       background-color: #fffffe;
       position: absolute;
       transform: scaleX(0);
-      transition: all .2s; }
+      transition: all 0.2s; }
     .header__link:link::before, .header__link:visited::before {
       transform-origin: left;
-      top: -.5rem; }
+      top: -0.5rem; }
     .header__link:link::after, .header__link:visited::after {
       transform-origin: right;
-      bottom: -.6rem;
+      bottom: -0.6rem;
       left: 0; }
     .header__link:link:hover::before, .header__link:link:hover::after, .header__link:visited:hover::before, .header__link:visited:hover::after {
       transform: scaleX(1); }
   .header__link {
     position: relative; }
+
+.hamburger-menu {
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  top: 1rem;
+  right: 3rem;
+  display: block;
+  background-color: #094067;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0; }
+  .hamburger-menu__span-1, .hamburger-menu__span-2, .hamburger-menu__span-3 {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    transition: all .3s ease-in-out; }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger-menu {
+      visibility: visible;
+      opacity: 1;
+      z-index: 3; } }
+
+.clicked {
+  top: 0;
+  transition: all 0.4s ease-in-out; }
+
+.span-2-clicked {
+  opacity: 0; }
+
+.span-1-clicked {
+  transform: translateY(1rem) rotateZ(-45deg); }
+
+.span-3-clicked {
+  transform: translateY(-1rem) rotateZ(45deg); }
 
 .side-nav {
   position: sticky;
