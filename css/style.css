@@ -7,22 +7,6 @@
 .margin-top-small {
   margin-top: 2rem; }
 
-@-webkit-keyframes buttonAnim {
-  0% {
-    background-position: 87% 0%; }
-  50% {
-    background-position: 14% 100%; }
-  100% {
-    background-position: 87% 0%; } }
-
-@-moz-keyframes buttonAnim {
-  0% {
-    background-position: 87% 0%; }
-  50% {
-    background-position: 14% 100%; }
-  100% {
-    background-position: 87% 0%; } }
-
 @keyframes buttonAnim {
   0% {
     background-position: 87% 0%; }
@@ -31,6 +15,30 @@
   100% {
     background-position: 87% 0%; } }
 
+@keyframes hero {
+  0% {
+    transform: translateX(100rem) rotate(360deg);
+    opacity: 0; }
+  100% {
+    transform: translateX(0) rotate(0);
+    opacity: 1; } }
+
+/*
+@keyframes typing {
+    from { 
+        width: 0; 
+    }
+    to { 
+        width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $tertiary; }
+  }
+
+  */
 *,
 *::before,
 *::after {
@@ -40,6 +48,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 55%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -48,19 +59,29 @@ body {
   display: flex; }
 
 .heading-1 {
-  font-size: 5rem;
+  font-size: calc(2rem + 2vw);
   color: #000;
   font-weight: 900; }
   .heading-1--white {
     color: #fff; }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #000;
   font-weight: 400; }
   .paragraph--white {
     color: #fff; }
 
+/*
+.heading-1-animation-class{
+    overflow: hidden;
+    border-right: .8rem solid $tertiary;
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .35rem; 
+    animation: typing 3.5s steps(40, end) infinite, blink-caret .75s step-end infinite;
+}
+*/
 .button {
   background-color: #ef4565;
   color: #fff;
@@ -75,12 +96,10 @@ body {
   background: linear-gradient(271deg, #ef4565, #094067);
   transition: all .3s;
   background-size: 400% 400%;
-  -webkit-animation: buttonAnim 3s ease infinite;
-  -moz-animation: buttonAnim 3s ease infinite;
   animation: buttonAnim 3s ease infinite; }
 
 .header {
-  background-color: #ef4565;
+  background-color: #094067;
   height: 7rem;
   z-index: 2; }
   .header__main-nav {
@@ -97,7 +116,7 @@ body {
         position: fixed;
         top: -100rem;
         right: 0rem;
-        background-color: #ef4565;
+        background-color: #90b4ce;
         flex-direction: column;
         justify-content: center; } }
   .header__list {
@@ -143,7 +162,7 @@ body {
   top: 1rem;
   right: 3rem;
   display: block;
-  background-color: #094067;
+  background-color: #3da9fc;
   padding: 1rem;
   border-radius: 50%;
   display: flex;
@@ -228,4 +247,5 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start; }
+    align-items: flex-start;
+    animation: hero 1.5s cubic-bezier(0.68, -0.6, 0.32, 1.6); }

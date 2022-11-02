@@ -1,5 +1,5 @@
 .header {
-  background-color: $tertiary;
+  background-color: $stroke;
   height: 7rem;
   z-index: 2;
   &__main-nav {
@@ -15,7 +15,7 @@
       position: fixed;
       top: -100rem;
       right: 0rem;
-      background-color: $tertiary;
+      background-color: $secondary;
       flex-direction: column;
       justify-content: center;
     }
@@ -75,7 +75,7 @@
   top: 1rem;
   right: 3rem;
   display: block;
-  background-color: $stroke;
+  background-color: $highlight;
   padding: 1rem;
   border-radius: 50%;
   display: flex;

@@ -1,15 +1,34 @@
-@-webkit-keyframes buttonAnim {
-    0%{background-position:87% 0%}
-    50%{background-position:14% 100%}
-    100%{background-position:87% 0%}
-}
-@-moz-keyframes buttonAnim {
-    0%{background-position:87% 0%}
-    50%{background-position:14% 100%}
-    100%{background-position:87% 0%}
-}
 @keyframes buttonAnim {
     0%{background-position:87% 0%}
     50%{background-position:14% 100%}
     100%{background-position:87% 0%}
 }
+
+
+@keyframes hero {
+    0%{
+        transform: translateX(100rem) rotate(360deg);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0) rotate(0);
+        opacity: 1;
+    }
+}
+
+/*
+@keyframes typing {
+    from { 
+        width: 0; 
+    }
+    to { 
+        width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $tertiary; }
+  }
+
+  */
