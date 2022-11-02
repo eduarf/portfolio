@@ -1,3 +1,22 @@
 .main {
     flex: 1;
 }
+.section-showcase{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/profile-med.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__content{
+        padding: calc(1rem + 2vw);
+        height: calc(8rem + 20vmax);
+        background-image: linear-gradient(rgba($stroke,.7), rgba($stroke,.7));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}

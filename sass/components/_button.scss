@@ -1,0 +1,18 @@
+.button {
+    background-color: $tertiary;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 1.5rem 5rem;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .4s;
+    background: linear-gradient(271deg, #ef4565, #094067);
+    transition: all .3s;
+    background-size: 400% 400%;
+    -webkit-animation: buttonAnim 3s ease infinite;
+    -moz-animation: buttonAnim 3s ease infinite;
+    animation: buttonAnim 3s ease infinite;
+}

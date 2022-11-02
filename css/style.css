@@ -1,3 +1,36 @@
+.margin-top-big {
+  margin-top: 6rem; }
+
+.margin-top-medium {
+  margin-top: 4rem; }
+
+.margin-top-small {
+  margin-top: 2rem; }
+
+@-webkit-keyframes buttonAnim {
+  0% {
+    background-position: 87% 0%; }
+  50% {
+    background-position: 14% 100%; }
+  100% {
+    background-position: 87% 0%; } }
+
+@-moz-keyframes buttonAnim {
+  0% {
+    background-position: 87% 0%; }
+  50% {
+    background-position: 14% 100%; }
+  100% {
+    background-position: 87% 0%; } }
+
+@keyframes buttonAnim {
+  0% {
+    background-position: 87% 0%; }
+  50% {
+    background-position: 14% 100%; }
+  100% {
+    background-position: 87% 0%; } }
+
 *,
 *::before,
 *::after {
@@ -13,6 +46,38 @@ body {
   font-weight: 400;
   line-height: 1.8;
   display: flex; }
+
+.heading-1 {
+  font-size: 5rem;
+  color: #000;
+  font-weight: 900; }
+  .heading-1--white {
+    color: #fff; }
+
+.paragraph {
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 400; }
+  .paragraph--white {
+    color: #fff; }
+
+.button {
+  background-color: #ef4565;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 1.5rem 5rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .4s;
+  background: linear-gradient(271deg, #ef4565, #094067);
+  transition: all .3s;
+  background-size: 400% 400%;
+  -webkit-animation: buttonAnim 3s ease infinite;
+  -moz-animation: buttonAnim 3s ease infinite;
+  animation: buttonAnim 3s ease infinite; }
 
 .header {
   background-color: #ef4565;
@@ -146,3 +211,21 @@ body {
 
 .main {
   flex: 1; }
+
+.section-showcase {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/profile-med.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .section-showcase__content {
+    padding: calc(1rem + 2vw);
+    height: calc(8rem + 20vmax);
+    background-image: linear-gradient(rgba(9, 64, 103, 0.7), rgba(9, 64, 103, 0.7));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start; }
