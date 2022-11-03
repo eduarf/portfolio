@@ -207,14 +207,8 @@ body {
     padding: 2rem 1rem;
     background-color: #094067;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center; }
-  .side-nav__photo {
-    height: 8vh;
-    width: 8vh;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%; }
   .side-nav__list {
     display: flex;
     flex-direction: column;

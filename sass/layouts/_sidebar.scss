@@ -9,18 +9,8 @@
         padding: 2rem 1rem;
         background-color: $stroke;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
-    }
-    &__photo-div{
-       
-    }
-    &__photo{
-        height: 8vh;
-        width: 8vh;
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
     }
     &__list{
         display: flex;
