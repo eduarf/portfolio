@@ -141,9 +141,10 @@ body {
     z-index: -1; }
 
 .header {
-  background-color: #ff8e3c;
   height: 7rem;
-  z-index: 2; }
+  z-index: 2;
+  position: absolute;
+  right: 0; }
   .header__main-nav {
     height: 100%;
     width: 100%;
@@ -175,14 +176,17 @@ body {
         padding-bottom: 3rem; } }
   .header__link:link, .header__link:visited {
     text-decoration: none;
-    font-size: 1.6rem;
-    color: #eff0f3;
+    font-size: 1.8rem;
+    color: #ff8e3c;
     font-weight: 700; }
+    @media only screen and (max-width: 37.5em) {
+      .header__link:link, .header__link:visited {
+        color: #eff0f3; } }
     .header__link:link::before, .header__link:link::after, .header__link:visited::before, .header__link:visited::after {
       content: "";
       width: 100%;
       height: 2px;
-      background-color: #eff0f3;
+      background-color: #ff8e3c;
       position: absolute;
       transform: scaleX(0);
       transition: all 0.2s; }
@@ -380,3 +384,21 @@ body {
         flex-basis: 90%;
         margin-top: 2rem;
         padding: 0; } }
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 6rem 2rem;
+  background-color: #eff0f3; }
+  .services__service {
+    min-height: 40vh;
+    padding: 4rem;
+    margin: 0 1rem 4rem;
+    flex-basis: 35rem;
+    flex-grow: 1;
+    background-color: #ff8e3c; }
+  .services__icon {
+    height: 5rem;
+    width: 5rem; }
