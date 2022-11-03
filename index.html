@@ -1,120 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <aside class="side-nav">
-        <div class="side-nav__content">
-            <ul class="side-nav__list">
-                <a href="#" class="side-nav__link">
-                    <svg class="side-nav__icon">
-              <use xlink:href="images/sprite.svg#icon-facebook-with-circle"></use>
+      <div class="side-nav__content">
+        <ul class="side-nav__list">
+          <a href="#" class="side-nav__link">
+            <svg class="side-nav__icon">
+              <use
+                xlink:href="images/sprite.svg#icon-facebook-with-circle"
+              ></use>
             </svg>
-                </a>
-                <a href="#" class="side-nav__link">
-                    <svg class="side-nav__icon">
+          </a>
+          <a href="#" class="side-nav__link">
+            <svg class="side-nav__icon">
               <use xlink:href="images/sprite.svg#icon-github-with-circle"></use>
             </svg>
-                </a>
-                <a href="#" class="side-nav__link">
-                    <svg class="side-nav__icon">
-              <use xlink:href="images/sprite.svg#icon-linkedin-with-circle"></use>
+          </a>
+          <a href="#" class="side-nav__link">
+            <svg class="side-nav__icon">
+              <use
+                xlink:href="images/sprite.svg#icon-linkedin-with-circle"
+              ></use>
             </svg>
-                </a>
-                <a href="#" class="side-nav__link">
-                    <svg class="side-nav__icon">
-              <use xlink:href="images/sprite.svg#icon-pinterest-with-circle"></use>
+          </a>
+          <a href="#" class="side-nav__link">
+            <svg class="side-nav__icon">
+              <use
+                xlink:href="images/sprite.svg#icon-pinterest-with-circle"
+              ></use>
             </svg>
-                </a>
-                <a href="#" class="side-nav__link">
-                    <svg class="side-nav__icon">
-              <use xlink:href="images/sprite.svg#icon-twitter-with-circle"></use>
+          </a>
+          <a href="#" class="side-nav__link">
+            <svg class="side-nav__icon">
+              <use
+                xlink:href="images/sprite.svg#icon-twitter-with-circle"
+              ></use>
             </svg>
-                </a>
-                <a href="#" class="side-nav__link">
-                    <svg class="side-nav__icon">
-              <use xlink:href="images/sprite.svg#icon-youtube-with-circle"></use>
+          </a>
+          <a href="#" class="side-nav__link">
+            <svg class="side-nav__icon">
+              <use
+                xlink:href="images/sprite.svg#icon-youtube-with-circle"
+              ></use>
             </svg>
-                </a>
-            </ul>
-
-        </div>
+          </a>
+        </ul>
+      </div>
     </aside>
 
-    
     <main class="main">
-        <div class="hamburger-menu">
-            <span class="hamburger-menu__span-1"></span>
-            <span class="hamburger-menu__span-2"></span>
-            <span class="hamburger-menu__span-3"></span>
+      <div class="hamburger-menu">
+        <span class="hamburger-menu__span-1"></span>
+        <span class="hamburger-menu__span-2"></span>
+        <span class="hamburger-menu__span-3"></span>
+      </div>
+      <header class="header">
+        <nav class="header__main-nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">About</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Projects</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Skills</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Hire Me</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="section-showcase">
+        <div class="section-showcase__content">
+          <h1 class="heading-1 heading-1--white heading-1-animation-class">
+            Jessica Blove
+          </h1>
+          <p class="paragraph paragraph--white">
+            Software Developer / Focused Front-End
+          </p>
+          <button class="button">My Work</button>
         </div>
-        <header class="header">
-            <nav class="header__main-nav">
-                <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="#">Home</a></li>
-                    <li class="header__item"><a class="header__link" href="#">About</a></li>
-                    <li class="header__item"><a class="header__link" href="#">Projects</a></li>
-                    <li class="header__item"><a class="header__link" href="#">Skills</a></li>
-                    <li class="header__item"><a class="header__link" href="#">Hire Me</a></li>
-                    <li class="header__item"><a class="header__link" href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+      </section>
 
-        <section class="section-showcase">
-            <div class="section-showcase__content">
-                <h1 class="heading-1 heading-1--white heading-1-animation-class">Jessica Blove</h1>
-                <p class="paragraph paragraph--white">
-                    Software Developer / Focused Front-End
-                </p>
-                <button class="button">My Work</button>
-            </div>
-        </section>
+      <section class="section-work">
+        <figure class="section-work__item--1 section-work__item">
+          <img
+            class="section-work__img"
+            src="images/work1.jpeg"
+            alt="image 1"
+          />
+        </figure>
+        <figure class="section-work__item--2 section-work__item">
+          <img
+            class="section-work__img"
+            src="images/work2.jpeg"
+            alt="image 2"
+          />
+        </figure>
+        <figure class="section-work__item--3 section-work__item">
+          <img
+            class="section-work__img"
+            src="images/work3.jpeg"
+            alt="image 3"
+          />
+        </figure>
+        <figure class="section-work__item--4 section-work__item">
+          <img
+            class="section-work__img"
+            src="images/work4.jpeg"
+            alt="image 4"
+          />
+        </figure>
+        <figure class="section-work__item--5 section-work__item">
+          <img
+            class="section-work__img"
+            src="images/work5.jpeg"
+            alt="image 5"
+          />
+        </figure>
+        <figure class="section-work__item--6 section-work__item">
+          <img
+            class="section-work__img"
+            src="images/work6.jpeg"
+            alt="image 6"
+          />
+        </figure>
+        <figure class="section-work__item--7 section-work__item">
+          <img
+            class="section-work__img"
+            src="images/work7.jpeg"
+            alt="image 7"
+          />
+        </figure>
+        <figure class="section-work__item--8 section-work__item">
+          <img
+            class="section-work__img"
+            src="images/work8.jpeg"
+            alt="image 8"
+          />
+        </figure>
+        <figure class="section-work__item--9 section-work__item">
+          <img
+            class="section-work__img"
+            src="images/work9.jpeg"
+            alt="image 9"
+          />
+        </figure>
+        <figure class="section-work__item--10 section-work__item">
+          <img
+            class="section-work__img"
+            src="images/work12.jpeg"
+            alt="image 10"
+          />
+        </figure>
+      </section>
 
-        <section class="section-work">
-            <figure class="section-work__item--1 section-work__item">
-                <img class="section-work__img" src="images/work1.jpeg" alt="image 1">
-            </figure>
-            <figure class="section-work__item--2 section-work__item">
-                <img class="section-work__img" src="images/work2.jpeg" alt="image 2">
-            </figure>
-            <figure class="section-work__item--3 section-work__item">
-                <img class="section-work__img" src="images/work3.jpeg" alt="image 3">
-            </figure>
-            <figure class="section-work__item--4 section-work__item">
-                <img class="section-work__img" src="images/work4.jpeg" alt="image 4">
-            </figure>
-            <figure class="section-work__item--5 section-work__item">
-                <img class="section-work__img" src="images/work5.jpeg" alt="image 5">
-            </figure>
-            <figure class="section-work__item--6 section-work__item">
-                <img class="section-work__img" src="images/work6.jpeg" alt="image 6">
-            </figure>
-            <figure class="section-work__item--7 section-work__item">
-                <img class="section-work__img" src="images/work7.jpeg" alt="image 7">
-            </figure>
-            <figure class="section-work__item--8 section-work__item">
-                <img class="section-work__img" src="images/work8.jpeg" alt="image 8">
-            </figure>
-            <figure class="section-work__item--9 section-work__item">
-                <img class="section-work__img" src="images/work9.jpeg" alt="image 9">
-            </figure>
-            <figure class="section-work__item--10 section-work__item">
-                <img class="section-work__img" src="images/work12.jpeg" alt="image 10">
-            </figure>
-            
-        </section>
+      <section class="about-me">
+        <div class="about-me__image-div">
+          <img
+            src="images/profile-med.jpeg"
+            alt="Profile photo"
+            class="about-me__image"
+          />
+        </div>
+        <div class="about-me__content">
+          <h1 class="heading-1 margin-bottom-medium heading-1--after">About Me</h1>
+          <p class="paragraph margin-bottom-medium paragraph--justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            temporibus quaerat fugit error reiciendis vitae molestias natus
+            omnis, nemo animi facilis doloribus et blanditiis laborum nisi at
+            totam autem inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </p>
+          <button class="button2">Read More</button>
+        </div>
+      </section>
+
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

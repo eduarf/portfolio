@@ -1,17 +1,34 @@
 .heading-1 {
     font-size: calc(2rem + 2vw);
-    color: #000;
+    color: #0d0d0d;
     font-weight: 900;
+    position: relative;
+    display: inline-block;
     &--white{
         color: #fff;
+    }
+    &--after{
+        &::after {
+            content: '';
+            bottom: -1rem;
+            left: 0;
+            width: 65%;
+            height: 5px;
+            background-color: $highlight;
+            position: absolute;
+        }
     }
 }
 .paragraph {
     font-size: 1.8rem;
-    color: #000;
+    color: #2a2a2a;
     font-weight: 400;
+    letter-spacing: .5px;
     &--white {
         color: #fff;
+    }
+    &--justify {
+        text-align: justify;
     }
 }
 /*

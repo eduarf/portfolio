@@ -1,16 +1,41 @@
-.button {
-    background-color: $tertiary;
-    color: #fff;
-    border: 1px solid transparent;
+%defaultButton {
+    border: none;
     padding: 1.5rem 5rem;
     border-radius: 3rem;
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: all .4s;
+}
+
+.button {
+    @extend %defaultButton;
+    color: #fff;
     background: linear-gradient(271deg, $highlight, $stroke);
-    transition: all .3s;
     background-size: 400% 400%;
     animation: buttonAnim 3s ease infinite;
+}
+.button2 {
+    @extend %defaultButton;
+    background-color: $highlight;
+    color: $main;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: $stroke;
+        left: 0;
+        top: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all .3s;
+    }
+    &:hover::after{
+        transform: scaleX(1);
+        z-index: -1;
+    }
 }

@@ -2,17 +2,27 @@
 $medium: 56.25em; // 900px
 $medium-small: 37.5em; // 600px
 
-$margin-top-big: 6rem;
-$margin-top-med: 4rem;
-$margin-top-small: 2rem;
+$margin-big: 6rem;
+$margin-med: 4rem;
+$margin-small: 2rem;
 
 
 .margin-top-big{
-    margin-top:  $margin-top-big;
+    margin-top:  $margin-big;
 }
 .margin-top-medium {
-    margin-top: $margin-top-med;
+    margin-top: $margin-med;
 }
 .margin-top-small {
-    margin-top: $margin-top-small;
+    margin-top: $margin-small;
+}
+
+.margin-bottom-big{
+    margin-bottom:  $margin-big;
+}
+.margin-bottom-medium {
+    margin-bottom: $margin-med;
+}
+.margin-bottom-small {
+    margin-bottom: $margin-small;
 }
