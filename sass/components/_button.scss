@@ -9,7 +9,7 @@
     letter-spacing: 1px;
     cursor: pointer;
     transition: all .4s;
-    background: linear-gradient(271deg, #ef4565, #094067);
+    background: linear-gradient(271deg, $tertiary, $stroke);
     transition: all .3s;
     background-size: 400% 400%;
     animation: buttonAnim 3s ease infinite;

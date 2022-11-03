@@ -1,5 +1,5 @@
 .header {
-  background-color: $stroke;
+  background-color: $tertiary;
   height: 7rem;
   z-index: 2;
   &__main-nav {
@@ -15,9 +15,10 @@
       position: fixed;
       top: -100rem;
       right: 0rem;
-      background-color: $secondary;
+      background-color: $highlight;
       flex-direction: column;
       justify-content: center;
+      z-index: 1000;
     }
   }
   &__list {
@@ -75,7 +76,7 @@
   top: 1rem;
   right: 3rem;
   display: block;
-  background-color: $highlight;
+  background-color: $stroke;
   padding: 1rem;
   border-radius: 50%;
   display: flex;
@@ -97,6 +98,7 @@
     visibility: visible;
     opacity: 1;
     z-index: 3;
+    z-index: 2000;
   }
 }
 
