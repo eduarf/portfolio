@@ -236,6 +236,9 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .section-showcase {
+      height: 65vh; } }
   .section-showcase__content {
     padding: calc(1rem + 2vw);
     height: calc(8rem + 20vmax);
@@ -293,4 +296,5 @@ body {
     cursor: pointer;
     transition: all .3s; }
     .section-work__img:hover {
-      transform: scale(1.03); }
+      filter: contrast(120%);
+      transform: scale(1.04); }
