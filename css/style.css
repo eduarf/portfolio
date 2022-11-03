@@ -93,13 +93,13 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
   transition: all .4s;
-  background: linear-gradient(271deg, #d9376e, #0d0d0d);
+  background: linear-gradient(271deg, #ff8e3c, #0d0d0d);
   transition: all .3s;
   background-size: 400% 400%;
   animation: buttonAnim 3s ease infinite; }
 
 .header {
-  background-color: #d9376e;
+  background-color: #ff8e3c;
   height: 7rem;
   z-index: 2; }
   .header__main-nav {
@@ -222,7 +222,7 @@ body {
     fill: #fffffe;
     transition: all .3s; }
     .side-nav__icon:hover {
-      fill: #d9376e; }
+      fill: #ff8e3c; }
 
 .main {
   flex: 1; }
@@ -247,7 +247,7 @@ body {
     animation: hero 1.5s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
 
 .section-work {
-  background-color: #fffffe;
+  background-color: #0d0d0d;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 6vw);
