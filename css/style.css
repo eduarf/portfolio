@@ -533,3 +533,43 @@ body {
     padding: 1rem; }
   .section-referances__card:hover > .section-referances__content {
     transform: scaleY(1); }
+
+.section-contact {
+  height: 100vh;
+  background-image: linear-gradient(to top right, rgba(217, 55, 110, 0.5), rgba(13, 13, 13, 0.8)), url(../images/profile-med.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 3rem; }
+  @media only screen and (max-width: 600px) {
+    .section-contact {
+      height: 75vh; } }
+  .section-contact__form {
+    flex-basis: 40rem;
+    display: flex;
+    flex-direction: column; }
+    .section-contact__form input,
+    .section-contact__form textarea {
+      color: #eff0f3;
+      font-size: 1.6rem;
+      letter-spacing: .2rem;
+      padding: 1.6rem;
+      background-color: transparent;
+      border: 3px solid #eff0f3;
+      margin: .3rem;
+      outline: none;
+      transition: border .4s;
+      font-weight: 700; }
+    .section-contact__form input:focus {
+      border: 3px solid #d9376e; }
+    .section-contact__form textarea:focus {
+      border: 3px solid #d9376e; }
+    .section-contact__form input::placeholder,
+    .section-contact__form textarea::placeholder {
+      color: #eff0f3; }
+    .section-contact__form input[type='submit'] {
+      cursor: pointer; }
+    .section-contact__form input[type='submit']:hover {
+      border: 3px solid #d9376e; }
