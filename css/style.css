@@ -32,7 +32,7 @@
     transform: translateX(0) rotate(0);
     opacity: 1; } }
 
-@keyframes progress1 {
+@keyframes progressAnim {
   0% {
     transform: scaleX(0);
     transform-origin: left; }
@@ -457,17 +457,27 @@ body {
     align-items: center;
     border-radius: 3rem;
     overflow: hidden;
-    padding: .2rem .4rem; }
+    padding: .2rem .4rem;
+    border-radius: 3rem; }
   .section-skills__progress-inside {
     display: inline-block;
     height: 80%;
-    border-radius: 3rem;
-    background-color: #d9376e; }
-  .section-skills__progress-inside--1 {
-    width: 90%;
-    border-radius: 3rem;
-    animation: progress1 3s infinite; }
-  .section-skills__progress-inside--2 {
-    width: 75%;
     background-color: #d9376e;
-    border-radius: 3rem; }
+    border-radius: 3rem;
+    animation: progressAnim 3s infinite; }
+  .section-skills__progress-inside--1 {
+    width: 90%; }
+  .section-skills__progress-inside--2 {
+    width: 75%; }
+  .section-skills__progress-inside--3 {
+    width: 70%; }
+  .section-skills__progress-inside--4 {
+    width: 50%; }
+  .section-skills__progress-inside--5 {
+    width: 95%; }
+  .section-skills__progress-inside--6 {
+    width: 80%; }
+  .section-skills__progress-inside--7 {
+    width: 90%; }
+  .section-skills__progress-inside--8 {
+    width: 75%; }
