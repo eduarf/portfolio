@@ -16,7 +16,7 @@
     &__content{
         padding: calc(1rem + 2vw);
         height: calc(8rem + 20vmax);
-        background-image: linear-gradient(rgba($stroke,.7), rgba($stroke,.7));
+        background-image: linear-gradient(rgba($stroke,.6), rgba($stroke,.6));
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -142,6 +142,7 @@
         padding: 4rem;
         margin: 0 1rem 4rem;
         position: relative;
+        border-radius: .5rem;
         // flex basis ile flex grow'u beraber kullanırsak elemanlar sığmadığı zaman alt satıra geçince
         // orada boş kalan satırı doldurmasını sağlıyoruz
         // böylece ek bir media query yazmadan resposnive görünüme sahip olmuş oluyoruz...
@@ -158,8 +159,7 @@
             left: 0;
             top: 0;
             z-index: -1;
-            transform: scaleX(0);
-            transform-origin: center;
+            transform: scaleY(0);
             transition: all .3s;
         }
         &:hover::after{
@@ -172,4 +172,49 @@
         margin-bottom: 2rem;
         fill: $main;
     }
+}
+.section-skills{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8rem 2rem;
+    &__design{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+    &__coding{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+    &__progress-bar{
+        background-color: $stroke;
+        height: 4rem;
+        width: 90%;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 3rem;
+        overflow: hidden;
+        padding: .2rem .4rem;
+    }
+    &__progress-inside{
+        display: inline-block;
+        height: 80%;
+        border-radius: 3rem;
+        background-color: $tertiary;
+    }
+    &__progress-inside--1{
+        width: 90%;
+        border-radius: 3rem;
+       animation: progress1 3s infinite;
+    }
+    &__progress-inside--2{
+        width: 75%;
+        background-color: $tertiary;
+        border-radius: 3rem;
+    }
+    &__progress-inside--3{}
+    &__progress-inside--4{}
+    &__progress-inside--5{}
+    &__progress-inside--6{}
 }

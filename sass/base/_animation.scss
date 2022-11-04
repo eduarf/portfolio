@@ -5,6 +5,7 @@
 }
 
 
+
 @keyframes hero {
     0%{
         transform: translateY(-75rem) rotate(360deg);
@@ -13,6 +14,16 @@
     100%{
         transform: translateX(0) rotate(0);
         opacity: 1;
+    }
+}
+@keyframes progress1{
+    0%{
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: left;
     }
 }
 

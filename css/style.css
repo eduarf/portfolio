@@ -32,6 +32,14 @@
     transform: translateX(0) rotate(0);
     opacity: 1; } }
 
+@keyframes progress1 {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left; }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left; } }
+
 /*
 @keyframes typing {
     from { 
@@ -85,10 +93,13 @@ body {
     position: absolute; }
 
 .heading-3 {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1.2rem + 1.2vw);
   font-weight: 700; }
   .heading-3--white {
     color: #eff0f3; }
+
+.heading-4 {
+  font-size: calc(.8rem + .8vw); }
 
 .paragraph {
   font-size: 1.8rem;
@@ -148,7 +159,7 @@ body {
 
 .header {
   height: 7rem;
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   right: 0; }
   .header__main-nav {
@@ -297,7 +308,7 @@ body {
   .section-showcase__content {
     padding: calc(1rem + 2vw);
     height: calc(8rem + 20vmax);
-    background-image: linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7));
+    background-image: linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6));
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -402,6 +413,7 @@ body {
     padding: 4rem;
     margin: 0 1rem 4rem;
     position: relative;
+    border-radius: .5rem;
     flex-basis: 35rem;
     flex-grow: 1;
     background-image: linear-gradient(to bottom right, #ff8e3c, #d9376e);
@@ -415,8 +427,7 @@ body {
       left: 0;
       top: 0;
       z-index: -1;
-      transform: scaleX(0);
-      transform-origin: center;
+      transform: scaleY(0);
       transition: all .3s; }
     .services__service:hover::after {
       transform: scaleX(1); }
@@ -425,3 +436,38 @@ body {
     width: 5rem;
     margin-bottom: 2rem;
     fill: #eff0f3; }
+
+.section-skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8rem 2rem; }
+  .section-skills__design {
+    flex-basis: 50%;
+    flex-grow: 1; }
+  .section-skills__coding {
+    flex-basis: 50%;
+    flex-grow: 1; }
+  .section-skills__progress-bar {
+    background-color: #0d0d0d;
+    height: 4rem;
+    width: 90%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 3rem;
+    overflow: hidden;
+    padding: .2rem .4rem; }
+  .section-skills__progress-inside {
+    display: inline-block;
+    height: 80%;
+    border-radius: 3rem;
+    background-color: #d9376e; }
+  .section-skills__progress-inside--1 {
+    width: 90%;
+    border-radius: 3rem;
+    animation: progress1 3s infinite; }
+  .section-skills__progress-inside--2 {
+    width: 75%;
+    background-color: #d9376e;
+    border-radius: 3rem; }

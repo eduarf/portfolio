@@ -20,11 +20,14 @@
     }
 }
 .heading-3 {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1.2rem + 1.2vw);
     font-weight: 700;
     &--white{
         color: $main;
     }
+}
+.heading-4 {
+    font-size: calc(.8rem + .8vw);
 }
 .paragraph {
     font-size: 1.8rem;
