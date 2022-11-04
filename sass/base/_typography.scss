@@ -4,8 +4,12 @@
     font-weight: 900;
     position: relative;
     display: inline-block;
+    text-transform: uppercase;
     &--white{
         color: $main;
+    }
+    &--tertiary{
+        color: $tertiary;
     }
     &--after{
         &::after {
@@ -21,13 +25,16 @@
 }
 .heading-3 {
     font-size: calc(1.2rem + 1.2vw);
-    font-weight: 700;
+    font-weight: 600;
+    color: $highlight;
+    text-transform: uppercase;
     &--white{
         color: $main;
     }
 }
 .heading-4 {
     font-size: calc(.8rem + .8vw);
+    text-transform: uppercase;
 }
 .paragraph {
     font-size: 1.8rem;
