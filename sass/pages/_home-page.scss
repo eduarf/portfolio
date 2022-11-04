@@ -139,18 +139,37 @@
     padding: 6rem 2rem;
     background-color: $main;
     &__service{
-        min-height: 40vh;
         padding: 4rem;
         margin: 0 1rem 4rem;
+        position: relative;
         // flex basis ile flex grow'u beraber kullanırsak elemanlar sığmadığı zaman alt satıra geçince
         // orada boş kalan satırı doldurmasını sağlıyoruz
         // böylece ek bir media query yazmadan resposnive görünüme sahip olmuş oluyoruz...
         flex-basis: 35rem;
         flex-grow: 1;
-        background-color: $highlight;
+        background-image: linear-gradient(to bottom right, $highlight, $tertiary);
+        z-index: 2;
+        &::after{
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to top left, $highlight, $tertiary);;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: all .3s;
+        }
+        &:hover::after{
+            transform: scaleX(1);
+        }
     }
     &__icon{
         height: 5rem;
         width: 5rem;
+        margin-bottom: 2rem;
+        fill: $main;
     }
 }
