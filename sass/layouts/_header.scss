@@ -20,6 +20,7 @@
       flex-direction: column;
       justify-content: center;
       z-index: 1000;
+      opacity: 0;
     }
   }
   &__list {
@@ -109,6 +110,7 @@
 
 .clicked {
   top: 0;
+  opacity: 1;
   transition: all 0.4s ease-in-out;
 }
 .span-2-clicked{
